@@ -171,3 +171,40 @@ main {
 
 /* 755px breakpoint for the what we do icons */
 
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 2%;
+    overflow: hidden;
+    margin: 0 5%;
+}
+
+.portfolio article {
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio article img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio article .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.563);
+    z-index: 10;
+    font-size: 30px;
+    transition: 1s;
+    transform: scale(0);
+}
+
+.portfolio article .overlay.active {
+    transform: scale(1);
+}
