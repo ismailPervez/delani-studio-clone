@@ -263,4 +263,25 @@ footer .social-icons {
         grid-template-columns: 1fr;
         height: 100%;
     }
+
+    /* portfolio projects */
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 200px;
+        grid-gap: 2%;
+        overflow: hidden;
+        margin: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+        grid-gap: 2%;
+        overflow: hidden;
+        margin: 0 5%;
+    }
 }
