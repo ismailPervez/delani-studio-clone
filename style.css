@@ -273,6 +273,16 @@ footer .social-icons {
         overflow: hidden;
         margin: 0 5%;
     }
+
+    /* contact form */
+    .contact-form form .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row input {
+        margin: 2% 0;
+    }
 }
 
 @media only screen and (max-width: 400px) {
