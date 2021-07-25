@@ -253,3 +253,14 @@ footer {
 footer .social-icons {
     margin: 2% 0;
 }
+
+/* mobile responsiveness */
+@media only screen and (max-width: 755px){
+    /* what we do */
+    .what-we-do {
+        margin: 5% 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+}
