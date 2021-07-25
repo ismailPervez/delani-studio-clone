@@ -14,3 +14,11 @@ $('.what-we-do article p').click((event) => {
     $(`.${desc}`).css("display", "none");
     $(`#${desc}`).fadeIn();
 })
+
+/* hover animations on the portfolio projects card */
+$('.portfolio article').hover(function() {
+
+    $(this).find('.overlay').addClass('active')
+}, function() {
+    $(this).find('.overlay').removeClass('active')
+})
