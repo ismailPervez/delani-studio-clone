@@ -138,3 +138,36 @@ main {
     font-size: 20px;
 }
 
+/* what we do */
+.what-we-do {
+    margin: 2% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+}
+
+.what-we-do article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.what-we-do article img {
+    cursor: pointer;
+}
+
+.what-we-do article h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.what-we-do article p {
+    text-align: center;
+    display: none;
+}
+
+/* 755px breakpoint for the what we do icons */
+
