@@ -36,5 +36,8 @@ $('form').submit(function(event) {
 
     else {
         alert(`hello ${name}! We have received your email. thank you for contacting us`);
+        $('#name').val('');
+        $('#email').val('');
+        $('#message').val('');
     }
 })
