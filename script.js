@@ -20,7 +20,9 @@ $('.portfolio article').hover(function() {
 
     $(this).find('.overlay').addClass('active');
 }, function() {
-    $(this).find('.overlay').removeClass('active');
+    setTimeout(() => {
+        $(this).find('.overlay').removeClass('active');
+    }, 1000)
 })
 
 /* contact form verification and response */
